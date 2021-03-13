@@ -6,6 +6,7 @@ public class PickKey : MonoBehaviour
 {
     public Component doorcolliderhere;
     public GameObject keygone;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class PickKey : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.E))
             keygone.SetActive(false);
+         
 
         if (Input.GetKey(KeyCode.E))
             doorcolliderhere.GetComponent<BoxCollider>().enabled = true;
