@@ -3,7 +3,9 @@ guid: e1308a6d86ff96743a69b835ed15387a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - UIObject: {fileID: 919132149155446097, guid: 8d757482cf89b8a4ba83a8153ff4d08e, type: 3}
+  - doorisopen: {fileID: 919132149155446097, guid: 8d757482cf89b8a4ba83a8153ff4d08e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

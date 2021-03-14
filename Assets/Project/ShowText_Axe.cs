@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShowText_Keys : MonoBehaviour
+public class ShowText_Axe : MonoBehaviour
 {
     public GameObject UIObject;
-    public GameObject hasthekey;                            // 
-    private PickKey pickkey_script;                         // Load Key Script
+    public GameObject hastheaxe;                            // 
+    private PickAxe pickaxe_script;                         // Load Key Script
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +18,8 @@ public class ShowText_Keys : MonoBehaviour
 
     void OnTriggerEnter(Collider other)                      // colliding with other object
     {
-        pickkey_script = hasthekey.GetComponent<PickKey>();  // aquires "hasthekey" value
-        if (other.tag == "Player" && pickkey_script.hasthekey == false) // if other object is PLAYER + player does NOT have the key
+        pickaxe_script = hastheaxe.GetComponent<PickAxe>();  // aquires "hasthekey" value
+        if (other.tag == "Player" && pickaxe_script.hastheaxe == false) // if other object is PLAYER + player does NOT have the key
         {
             UIObject.SetActive(true);                         // show key message
         }

@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ShowText_Keys : MonoBehaviour
+public class ShowText_Unpickables : MonoBehaviour
 {
     public GameObject UIObject;
-    public GameObject hasthekey;                            // 
-    private PickKey pickkey_script;                         // Load Key Script
 
     // Start is called before the first frame update
     void Start()
@@ -18,8 +16,7 @@ public class ShowText_Keys : MonoBehaviour
 
     void OnTriggerEnter(Collider other)                      // colliding with other object
     {
-        pickkey_script = hasthekey.GetComponent<PickKey>();  // aquires "hasthekey" value
-        if (other.tag == "Player" && pickkey_script.hasthekey == false) // if other object is PLAYER + player does NOT have the key
+        if (other.tag == "Player")                           // if other object is PLAYER
         {
             UIObject.SetActive(true);                         // show key message
         }

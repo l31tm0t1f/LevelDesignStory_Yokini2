@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class plantscript : MonoBehaviour
+public class OpenPlant : MonoBehaviour
 {
-    public GameObject plantdestroyerhere;
+    public GameObject plantdestroyerhere; 
 
     // Start is called before the first frame update
     void Start()
