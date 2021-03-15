@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class ShowText_Keys : MonoBehaviour
 {
-    public GameObject UIObject;
+    public GameObject UIObject_key;
     public GameObject hasthekey;                            // 
     private PickKey pickkey_script;                         // Load Key Script
 
     // Start is called before the first frame update
     void Start()
     {
-        UIObject.SetActive(false);                           // "key" message is hidden
+        UIObject_key.SetActive(false);                           // "key" message is hidden
 
     }
 
@@ -21,12 +21,12 @@ public class ShowText_Keys : MonoBehaviour
         pickkey_script = hasthekey.GetComponent<PickKey>();  // aquires "hasthekey" value
         if (other.tag == "Player" && pickkey_script.hasthekey == false) // if other object is PLAYER + player does NOT have the key
         {
-            UIObject.SetActive(true);                         // show key message
+            UIObject_key.SetActive(true);                         // show key message
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        UIObject.SetActive(false);
+        UIObject_key.SetActive(false);
     }
 }

@@ -9,6 +9,7 @@ public class OpenDoor : MonoBehaviour
     public Animation hingehere;
 
     public bool doorisopen;
+    // public bool hasthekey;
     // Start is called before the first frame update
     void Start()
     {

@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ShowText_Boat : MonoBehaviour
 {
-    public GameObject UIObject;                                 // Text before finding the key
-    public GameObject UIObject2;                                // Text after finding the key
+    public GameObject UIObject_boat1;                                 // Text before finding the key
+    public GameObject UIObject_boat2;                                // Text after finding the key
     public GameObject boatopenerhere;                          // boolean for "can you enter the boat" detection
     public GameObject hasthejacket;                                // boolean for key ownership
     private OpenBoat openboat_script;                           // OpenDoor script
@@ -15,8 +15,8 @@ public class ShowText_Boat : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UIObject.SetActive(false);
-        UIObject2.SetActive(false);
+        UIObject_boat1.SetActive(false);
+        UIObject_boat2.SetActive(false);
         openboat_script = boatopenerhere.GetComponent<OpenBoat>();  // get "boat is open" value
         pickjacket_script = hasthejacket.GetComponent<PickJacket>();     // get hasthekey value
     }
@@ -26,13 +26,13 @@ public class ShowText_Boat : MonoBehaviour
         if (other.tag == "Player" && pickjacket_script.hasthejacket == false)
         // if other object is PLAYER + player does NOT have the key
         {
-            UIObject.SetActive(true);
+            UIObject_boat1.SetActive(true);
         }
 
         if (other.tag == "Player" && pickjacket_script.hasthejacket == true)
         // if other object is PLAYER + player have the key
         {
-            UIObject2.SetActive(true);
+            UIObject_boat2.SetActive(true);
         }
 
 
@@ -47,7 +47,7 @@ public class ShowText_Boat : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        UIObject.SetActive(false);
-        UIObject2.SetActive(false);
+        UIObject_boat1.SetActive(false);
+        UIObject_boat2.SetActive(false);
     }
 }

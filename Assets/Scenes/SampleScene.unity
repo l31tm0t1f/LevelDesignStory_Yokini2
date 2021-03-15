@@ -937,7 +937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 105173071}
   - component: {fileID: 105173073}
-  - component: {fileID: 105173075}
+  - component: {fileID: 105173072}
   m_Layer: 0
   m_Name: Trigger_Plant
   m_TagString: Untagged
@@ -959,6 +959,22 @@ Transform:
   m_Father: {fileID: 832611692}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &105173072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105173070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de41563a8522ace4eb821dd7e19fb462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIObject_plant1: {fileID: 503313626}
+  UIObject_plant2: {fileID: 585184634}
+  doorisopen: {fileID: 1791523140}
+  hastheaxe: {fileID: 1827032199}
 --- !u!65 &105173073
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -972,22 +988,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.4175549, y: 0.7059196, z: 1.1799183}
   m_Center: {x: 2.577125, y: 0.14704019, z: -0.089959145}
---- !u!114 &105173075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105173070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de41563a8522ace4eb821dd7e19fb462, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UIObject: {fileID: 503313626}
-  UIObject2: {fileID: 585184634}
-  doorisopen: {fileID: 1791523140}
-  hastheaxe: {fileID: 1827032199}
 --- !u!1001 &106790544
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2583,7 +2583,7 @@ BoxCollider:
   m_GameObject: {fileID: 286405842}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.51691747, y: 1.8396406, z: 1.1153145}
   m_Center: {x: -0.24154127, y: 0.4198203, z: 0.45410347}
@@ -2812,8 +2812,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 437b5fee41c58e9488b89f6a71c1cd1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIObject: {fileID: 797819197}
-  UIObject2: {fileID: 103804911}
+  UIObject_boat1: {fileID: 797819197}
+  UIObject_boat2: {fileID: 103804911}
   boatopenerhere: {fileID: 300076564}
   hasthejacket: {fileID: 1682649834}
 --- !u!65 &300076568
@@ -3803,7 +3803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a3c5d1cb0a1beb40a40e6e7ee153536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIObject: {fileID: 602596463}
+  UIObject_key: {fileID: 602596463}
   hasthekey: {fileID: 1073463061}
 --- !u!65 &403784699
 BoxCollider:
@@ -5305,8 +5305,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1308a6d86ff96743a69b835ed15387a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIObject: {fileID: 1391023038}
-  UIObject2: {fileID: 0}
+  UIObject_door1: {fileID: 0}
+  UIObject_door2: {fileID: 0}
   doorisopen: {fileID: 0}
   hasthekey: {fileID: 0}
 --- !u!65 &534215557
@@ -5951,7 +5951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2583caad3b6ceb240825b8cb28ae8274, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIObject: {fileID: 701278082}
+  UIObject_lifejacket: {fileID: 701278082}
   hasthejacket: {fileID: 1682649834}
 --- !u!65 &647458407
 BoxCollider:
@@ -6865,7 +6865,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.98332363, b: 0.42830187, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -7390,8 +7390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1308a6d86ff96743a69b835ed15387a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIObject: {fileID: 1391023038}
-  UIObject2: {fileID: 863090779}
+  UIObject_door1: {fileID: 1391023038}
+  UIObject_door2: {fileID: 863090779}
   doorisopen: {fileID: 286405842}
   hasthekey: {fileID: 1073463061}
 --- !u!65 &767008322
@@ -11036,26 +11036,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1111394935 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6786789603556122525, guid: 8d757482cf89b8a4ba83a8153ff4d08e, type: 3}
-  m_PrefabInstance: {fileID: 1073463059}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1111394939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1111394935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c15b96b927a209f4fafe62abf6da2173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doorcolliderhere: {fileID: 0}
-  keygone: {fileID: 0}
-  hasthekey: 0
 --- !u!1001 &1132634717
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19604,7 +19584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11fa5fffdf458de41933e6b12d10f3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIObject: {fileID: 347302015}
+  UIObject_axe: {fileID: 347302015}
   hastheaxe: {fileID: 1827032199}
 --- !u!65 &1920795239
 BoxCollider:
@@ -20419,15 +20399,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.6
+      value: -9.52
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.49
+      value: 3.04
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 65.5
+      value: -15.63
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.w

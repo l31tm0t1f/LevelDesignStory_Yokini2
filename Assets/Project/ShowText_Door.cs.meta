@@ -4,8 +4,10 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - UIObject: {fileID: 919132149155446097, guid: 8d757482cf89b8a4ba83a8153ff4d08e, type: 3}
-  - doorisopen: {fileID: 919132149155446097, guid: 8d757482cf89b8a4ba83a8153ff4d08e, type: 3}
+  - UIObject: {instanceID: 0}
+  - UIObject2: {instanceID: 0}
+  - doorisopen: {instanceID: 0}
+  - hasthekey: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
