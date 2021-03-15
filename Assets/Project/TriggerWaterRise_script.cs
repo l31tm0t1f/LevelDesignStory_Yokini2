@@ -16,7 +16,7 @@ public class TriggerWaterRise_script : MonoBehaviour
 
     void OnTriggerEnter (Collider other)
     {
-        ObjectToMove.transform.position = +moveDirection;
+        // ObjectToMove.transform.position = +moveDirection;
     }
 
 
