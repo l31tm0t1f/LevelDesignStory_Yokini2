@@ -33,18 +33,9 @@ public class ShowText_Boat : MonoBehaviour
         // if other object is PLAYER + player have the key
         {
             UIObject_boat2.SetActive(true);
+            Destroy(boatopenerhere); // ShowText_Plant seda pole
         }
-
-
-        //if (other.tag == "Player" && openboat_script.boatopenerhere == true) // if other object is PLAYER + boat is opened
-        //{
-        //    UIObject.SetActive(false);
-        //    UIObject2.SetActive(false); // WINNING CONDITION HERE
-        //}
-
     }
-
-
     void OnTriggerExit(Collider other)
     {
         UIObject_boat1.SetActive(false);

@@ -668,7 +668,7 @@ Transform:
   - {fileID: 1652967406}
   - {fileID: 695642333}
   m_Father: {fileID: 1999094653}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &38813186
 PrefabInstance:
@@ -3192,8 +3192,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hingehere: {fileID: 286405843}
-  hasthekey: {fileID: 0}
   doorisopen: 0
+  hasthekey: {fileID: 1073463061}
 --- !u!65 &286405846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15179,6 +15179,64 @@ Transform:
   m_Father: {fileID: 663887744}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1270024041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270024042}
+  - component: {fileID: 1270024044}
+  - component: {fileID: 1270024043}
+  m_Layer: 0
+  m_Name: Boat_Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270024042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270024041}
+  m_LocalRotation: {x: -0, y: -0.34525478, z: -0, w: 0.93850905}
+  m_LocalPosition: {x: 12.171918, y: 3.9691768, z: 95.55838}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1999094653}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: -40.395, z: 0}
+--- !u!114 &1270024043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270024041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8dbc6b0440148d47993cbfa426b414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boatopenerhere: {fileID: 1270024041}
+--- !u!65 &1270024044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270024041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.6941495, z: 4.8598022}
+  m_Center: {x: 0, y: 0.84707475, z: 1.9299011}
 --- !u!1 &1277534080
 GameObject:
   m_ObjectHideFlags: 0
@@ -19863,51 +19921,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7438b2c0fa738944d8548ff2e30f33c7, type: 3}
   m_PrefabInstance: {fileID: 1648040463}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1648040465 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7438b2c0fa738944d8548ff2e30f33c7, type: 3}
-  m_PrefabInstance: {fileID: 1648040463}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1648040466
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648040465}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
---- !u!114 &1648040467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648040465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8dbc6b0440148d47993cbfa426b414c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boatopenerhere: {fileID: 1648040465}
---- !u!65 &1648040468
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648040465}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.53788865, y: 2.5918124, z: 5.383856}
-  m_Center: {x: -0.8592499, y: 2.348174, z: 0.40462765}
 --- !u!1 &1649855862
 GameObject:
   m_ObjectHideFlags: 0
@@ -21433,8 +21446,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hingehere: {fileID: 0}
-  hasthekey: {fileID: 0}
   doorisopen: 0
+  hasthekey: {fileID: 0}
 --- !u!64 &1743351213
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -22211,7 +22224,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 94d5215de8c90c0408243567a9830bf4, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 94d5215de8c90c0408243567a9830bf4, type: 3}
       propertyPath: m_LocalScale.x
@@ -24408,15 +24421,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.52
+      value: -2.33
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.33
+      value: 8.29
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.844
+      value: 69.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -24541,6 +24554,7 @@ Transform:
   - {fileID: 407602182}
   - {fileID: 1132634718}
   - {fileID: 2125851898}
+  - {fileID: 1270024042}
   - {fileID: 35123016}
   - {fileID: 1795459469}
   m_Father: {fileID: 0}

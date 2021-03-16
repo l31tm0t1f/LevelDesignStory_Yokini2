@@ -34,10 +34,7 @@ public class ShowText_Plant : MonoBehaviour
         {
             UIObject_plant2.SetActive(true);
         }
-
     }
-
-
     void OnTriggerExit(Collider other)
     {
         UIObject_plant1.SetActive(false);

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OpenPlant : MonoBehaviour
 {
-    public GameObject plantdestroyerhere; 
+    public GameObject plantdestroyerhere;  // select the blocking trigger box
 
     // Start is called before the first frame update
     void Start()
