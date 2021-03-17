@@ -1152,9 +1152,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 539700.25, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 900, y: 120}
-  m_Pivot: {x: 900, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &103804913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,7 +1188,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: About the last moment to leave the sinking ship...thank god I made it!
+  m_Text: "About the last moment to leave the sinking ship...You made it! \nPress
+    \"ESC\" to quit"
 --- !u!222 &103804914
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2534,12 +2535,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207320465}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.579, y: 2.838, z: 19.904}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.621635, y: -2.6854165, z: 29.756351}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 2051710771}
+  m_RootOrder: 60
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &228750531
 PrefabInstance:
@@ -3556,8 +3557,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.8220186, y: 2.1906247, z: 2.1253831}
-  m_Center: {x: 0.8327474, y: 0.8893926, z: -2.4234633}
+  m_Size: {x: 6.8220186, y: 2.1906247, z: 3.612004}
+  m_Center: {x: 0.83274746, y: 0.8893926, z: -1.4710711}
 --- !u!1 &300303198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 0584462d5cbb25e40abd8f21dacc0dca, type: 3}
@@ -5525,6 +5526,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4340423644140328716, guid: 7438b2c0fa738944d8548ff2e30f33c7, type: 3}
   m_PrefabInstance: {fileID: 1648040463}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &470889581 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2286593022977267760, guid: 7438b2c0fa738944d8548ff2e30f33c7, type: 3}
+  m_PrefabInstance: {fileID: 1648040463}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &470889584
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5533,11 +5539,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470889580}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4207752, y: 1.9059443, z: 5.5175176}
-  m_Center: {x: 0.088366054, y: 1.9608068, z: 0.30858234}
+  m_Size: {x: 2.03135, y: 1.905944, z: 5.5175176}
+  m_Center: {x: -0.21692182, y: 1.9608068, z: 0.30858234}
 --- !u!64 &470889585
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5565,6 +5571,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIObject_boat3: {fileID: 1701624217}
+--- !u!114 &470889587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470889580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8dbc6b0440148d47993cbfa426b414c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boatopenerhere: {fileID: 0}
 --- !u!1001 &475365960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15196,7 +15215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1270024042
 Transform:
   m_ObjectHideFlags: 0
@@ -15233,7 +15252,7 @@ BoxCollider:
   m_GameObject: {fileID: 1270024041}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 2.6941495, z: 4.8598022}
   m_Center: {x: 0, y: 0.84707475, z: 1.9299011}
@@ -19720,6 +19739,7 @@ Transform:
   - {fileID: 554026924}
   - {fileID: 1198230168}
   - {fileID: 1688628700}
+  - {fileID: 1677001592}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20680,12 +20700,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677001588}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.244, y: 5.471, z: 39.965}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.4733095, y: 2.2507586, z: 14.640156}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1613565722}
+  m_RootOrder: 157
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1680976301
 MeshCollider:
@@ -20732,7 +20752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebb4546c42e8d814d896ee1cb459e9ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  boatopenerhere: {fileID: 300076565}
+  boatopenerhere: {fileID: 470889581}
   jacketgone: {fileID: 1682649834}
   hasthejacket: 0
 --- !u!65 &1682649838
@@ -21026,7 +21046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1701624218
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25275,6 +25295,7 @@ Transform:
   - {fileID: 1239823986}
   - {fileID: 140121762}
   - {fileID: 823104093}
+  - {fileID: 207320469}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

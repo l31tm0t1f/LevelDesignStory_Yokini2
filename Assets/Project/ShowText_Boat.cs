@@ -33,7 +33,7 @@ public class ShowText_Boat : MonoBehaviour
         // if other object is PLAYER + player have the key
         {
             UIObject_boat2.SetActive(true);
-            Destroy(boatopenerhere); // ShowText_Plant seda pole
+            // Destroy(boatopenerhere); // ShowText_Plant seda pole
         }
     }
     void OnTriggerExit(Collider other)
