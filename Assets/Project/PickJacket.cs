@@ -7,8 +7,8 @@ public class PickJacket : MonoBehaviour
     public Component boatopenerhere;
     public GameObject jacketgone;
     public bool hasthejacket;
-// Start is called before the first frame update
-void Start()
+    // Start is called before the first frame update
+    void Start()
     {
         hasthejacket = false;                                                  // player does NOT have an axe
     }
